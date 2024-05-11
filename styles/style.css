@@ -47,8 +47,11 @@
 }
 
 .cover {
+  position: relative;
   background: url("../images/cover.jpg") center/cover;
-  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cover__title {
@@ -76,6 +79,8 @@
   word-spacing: 17.5px;
   text-transform: uppercase;
   margin-right: 80px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Overlay */
@@ -90,16 +95,22 @@
 
 .aligned-text_left {
 text-align: left;
+position: relative;
+z-index: 1;
 }
 
 .aligned-text_center {
   width: 100%;
   max-width: 1310px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .aligned-text_right {
   text-align: right;
+  position: relative;
+  z-index: 1;
 }
 
 /* Letter spacing */
@@ -129,7 +140,7 @@ text-align: left;
 /* Lots */
 
 .lots {
-  padding: 180px 50px;
+  padding: 180px 0px;
 }
 
 .lots__heading {
@@ -141,15 +152,14 @@ text-align: left;
 
 .lots__card-list {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 25px;
+  width: 100%;
   list-style: none;
   margin-bottom: 30px;
   margin-top: 27px;
-}
-
-.lots__card-list-item {
-  flex-grow: 1;
 }
 
 .lots__card-list-item:first-child {
@@ -172,28 +182,25 @@ text-align: left;
 /* Card */
 
 .card {
-  z-index: 1;
   position: relative;
-  /*display: flex;
-  flex-direction: row;
-  justify-content: space-between;*/
-  min-height: 563px;
-  max-width: 334px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 563px;
+  max-width: 334px;
+  flex-grow: 1;
 }
 
 .card_type_film {
-  background: url(../images/card-lot-01.jpg) center/cover;
+  background: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
-  background: url(../images/card-lot-02.jpg) center/cover;
+  background: url("../images/card-lot-02.jpg");
 }
 
 .card_type_picture {
-  background: url(../images/card-lot-03.jpg) center/cover;
+  background: url("../images/card-lot-03.jpg");
 }
 
 .card-link {
@@ -201,7 +208,7 @@ text-align: left;
   flex-direction: column;
   justify-content: space-between;
   text-decoration: none;
-  flex-grow: 1;
+  height: 100%;
 }
 
 .card .overlay {
@@ -212,20 +219,24 @@ text-align: left;
 }
 
 .card__title {
+  position: relative;
+  z-index: 1;
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
-  color: #fff
+  color: #fff;
 }
 
 .card__text {
+  position: relative;
   line-height: 120%;
   font-size: 20px;
   font-weight: 400;
   color: #fff;
   z-index: 1;
   text-decoration: none;
+  z-index: 1;
 }
 
 /* About */
@@ -292,7 +303,7 @@ text-align: left;
 }
 
 .footer__menu-link {
-  text-position: underline;
+  text-decoration: underline;
 }
 
 .footer__menu-link_active {
