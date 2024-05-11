@@ -62,6 +62,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .cover__description {
@@ -69,6 +72,9 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .cover__description-text {
@@ -81,13 +87,16 @@
   margin-right: 80px;
   position: relative;
   z-index: 1;
+  color: #fff;
+  margin-bottom: 62px;
 }
 
 /* Overlay */
 
 .overlay {
-  height: inherit;
-  padding: 165px 50px 50px;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -134,6 +143,8 @@ z-index: 1;
   background: none;
   border: 1px solid #fff;
   color: #fff;
+  margin-bottom: 51px;
+  margin-right: 50px;
   padding: 12px 32px;
 }
 
@@ -181,6 +192,8 @@ z-index: 1;
   min-height: 563px;
   max-width: 334px;
   flex-grow: 1;
+  margin-right: 24px;
+  margin-left: 24px;
 }
 
 .card_type_film {
@@ -211,6 +224,7 @@ z-index: 1;
   text-transform: uppercase;
   text-decoration: underline;
   color: #fff;
+  margin: 51px 40px;
 }
 
 .card__text {
@@ -222,6 +236,10 @@ z-index: 1;
   z-index: 1;
   text-decoration: none;
   z-index: 1;
+  margin-bottom: 48px;
+  margin-left: 40px;
+  margin-right: 40px;
+  
 }
 
 /* About */
@@ -235,21 +253,23 @@ z-index: 1;
 *.about__logo {
   background-color: #000;
   border-radius: 50%;
-  margin: 0 95px;
-  padding: 63px 46px;
+  margin: 71 95px;
+  padding: 73px 76px;
+  width: 300px;
+  height: 300px;
   align-self: start;
 }
 
 
 .about__logo-image {
   width: 148px;
-  height: 148px;
+  height: 114px;
 }
 
 .about__title {
   text-transform: uppercase;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 100;
 }
 
 .about__text {
@@ -258,7 +278,13 @@ z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 100px;
+  margin-top: 259px;
+  margin-right: 414px;
+  margin-left: 114px;
+  margin-bottom: 180px;
+  width: 693px;
+  height: 312px;
+
 }
 
 /* Footer */
@@ -267,8 +293,8 @@ z-index: 1;
   font-size: 18px;
   font-weight: 400;
   padding: 0 50px 90px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 460px);
 }
 
 .footer__address {
@@ -279,7 +305,6 @@ z-index: 1;
   flex: 0 0 auto;
   width: auto;
   display: flex;
-  /*flex-direction: column;*/
 }
 
 .footer__menu-list {
