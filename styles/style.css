@@ -241,7 +241,6 @@
 	color: #fff;
 	z-index: 1;
 	text-decoration: none;
-	z-index: 1;
 	margin-bottom: 48px;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -288,7 +287,7 @@
 	flex-direction: column;
 	gap: 25px;
 	margin-top: 100px;
-	padding-left: 59px;
+	padding-left: 9px;
 	padding-right: 2px;
 }
 
@@ -310,6 +309,7 @@
 	flex: 0 0 auto;
 	width: auto;
 	display: flex;
+	padding-left: 13%;
 }
 
 .footer__menu-list {
@@ -331,7 +331,7 @@
 	display: flex;
 	justify-content: space-between;
 	justify-content: end;
-	gap: 18px;
+	gap: 46px;
 	list-style: none;
 }
 
