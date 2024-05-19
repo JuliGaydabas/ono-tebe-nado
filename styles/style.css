@@ -1,52 +1,70 @@
 /* Header */
 
 .header {
-	font-size: 18px;
-	font-weight: 400;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 92px 50px 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu {
+  flex: 0 0 auto;
+  width: 33.3%;
 }
 
 .header__link {
-	text-underline-position: under;
-	margin-bottom: 98px;
+  text-underline-position: under;
 }
 
 .header__links-list {
-	display: flex;
-	gap: 32px;
+  display: flex;
+  gap: 32px;
+	width: 450px;
+	margin-top: 10px;
 }
 
 .header__links-list-item {
-	border-bottom: #000;
-	list-style: circle;
-	margin-bottom: 10px;
+  border-bottom: #000;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
-	list-style: none;
+  list-style: none;
 }
 
 .header__link_active {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .header__logo {
-	flex: auto;
-	width: 148px;
-	height: 105px;
-	margin-bottom: 96px;
-	margin-left: 90px;
-	margin-top: 92px;
+  flex: 0 0 auto;
+  width: 148px;
+  height: 105px;
 }
 
 .header__logo-image {
-	display: block;
-	width: 143px;
-	height: 113px;
+  width: inherit;
+  height: inherit;
 }
+
+.header__address {
+  padding-left: 15.5%;
+}
+
+/* Address */
+
+.address {
+  flex: 0 0 auto;
+  width: 33.3%;
+  line-height: 135%;
+  font-style: normal;
+  text-underline-position: under;
+}
+
+/* Cover */
 
 .cover {
 	position: relative;
@@ -54,6 +72,8 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	width: 1100px;
+	margin-top: -17px;
 }
 
 .cover__title {
@@ -94,7 +114,6 @@
 	position: relative;
 	z-index: 1;
 	color: #fff;
-	margin-bottom: 62px;
 }
 
 /* Overlay */
@@ -151,7 +170,7 @@
 	background: none;
 	border: 1px solid #fff;
 	color: #fff;
-	margin-bottom: 51px;
+	margin-bottom: 25px;
 	margin-right: 50px;
 	padding: 12px 32px;
 }
@@ -165,7 +184,7 @@
 .lots__heading {
 	font-size: 40px;
 	font-weight: 700;
-	margin: 0 0 27px 40px;
+	margin: 0 0 27px 66px;
 	text-transform: uppercase;
 }
 
@@ -184,7 +203,8 @@
 .lots__look-more-link {
 	text-decoration: none;
 	text-transform: lowercase;
-	margin-left: 40px;
+	margin-left: 66px;
+	margin-top: 50px;
 	font-size: 20px;
 	font-weight: 400;
 	border-bottom: 1px solid #000;
@@ -197,9 +217,11 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 563px;
+	max-height: 563px;
 	max-width: 334px;
 	flex-grow: 1;
+	margin-left: 14px;
+	margin-right: -6px;
 }
 
 .card_type_film {
@@ -264,6 +286,8 @@
 	justify-content: center;
 	align-content: center;
 	flex-shrink: 0;
+	margin-left: 22px;
+	margin-top: 6px;
 }
 
 .about__logo-image {
@@ -278,6 +302,8 @@
 	font-size: 40px;
 	font-weight: 700;
 	padding-bottom: 100px;
+	margin-left: -55px;
+	margin-top: 10px;
 }
 
 .about__text {
@@ -299,6 +325,7 @@
 	padding: 0 50px 90px;
 	display: flex;
 	justify-content: space-between;
+	margin-top: -70px;
 }
 
 .footer__address {
@@ -310,6 +337,7 @@
 	width: auto;
 	display: flex;
 	padding-left: 13%;
+	margin-left: -130px;
 }
 
 .footer__menu-list {
