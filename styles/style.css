@@ -357,7 +357,6 @@
 	flex: 0 0 auto;
 	width: 33.3%;
 	display: flex;
-	justify-content: space-between;
 	justify-content: end;
 	gap: 46px;
 	list-style: none;
